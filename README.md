@@ -1,7 +1,6 @@
 # GitHub Actions Problem Matcher
 
 [![CI Workflow Status](https://github.com/xt0rted/problem-matcher/workflows/CI/badge.svg)](https://github.com/xt0rted/problem-matcher/actions?query=workflow%3ACI)
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=xt0rted/problem-matcher)](https://dependabot.com)
 
 A GitHub Actions template to easily add or remove a problem matcher to workflows.
 
