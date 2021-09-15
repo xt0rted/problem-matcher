@@ -1,12 +1,12 @@
 import { matchResults } from "../__helpers__/utils";
-import { problemMatcher as problemMatcherJson } from "../.github/problem-matcher.json";
+import { problemMatcher as problemMatcherJson } from "../src/problem-matcher.json";
 import { ProblemMatcher, ProblemPattern } from "github-actions-problem-matcher-typings";
 
 const problemMatcher: ProblemMatcher = problemMatcherJson[0];
 
 describe("problemMatcher", () => {
   it("has the correct owner", () => {
-    expect(problemMatcher.owner).toEqual("somelinter");
+    expect(problemMatcher.owner).toEqual("someLinter");
   });
 
   it("has one pattern", () => {
