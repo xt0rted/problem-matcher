@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node: [12, 14, 16]
+        node: [16, 17]
 
     steps:
       - name: Checkout repo
@@ -32,3 +32,7 @@ jobs:
       - run: yarn build
 
       - run: yarn package
+        if: ${{ matrix.node != 17 }}
+
+      - run: export NODE_OPTIONS=--openssl-legacy-provider && yarn package
+        if: ${{ matrix.node == 17 }}
