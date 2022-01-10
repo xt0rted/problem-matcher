@@ -27,9 +27,9 @@ jobs:
 
       - run: yarn lint
 
-      - run: yarn test
-
       - run: yarn build
+
+      - run: yarn test
 
       - run: yarn package
         if: ${{ matrix.node != 17 }}
