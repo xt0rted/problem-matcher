@@ -1,6 +1,7 @@
 # GitHub Actions Problem Matcher
 
-[![CI Workflow Status](https://github.com/xt0rted/problem-matcher/workflows/CI/badge.svg)](https://github.com/xt0rted/problem-matcher/actions?query=workflow%3ACI)
+[![CI](https://github.com/xt0rted/problem-matcher/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/xt0rted/problem-matcher/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/xt0rted/problem-matcher/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/xt0rted/problem-matcher/actions/workflows/codeql-analysis.yml)
 
 A GitHub Actions template to easily add or remove a problem matcher to workflows.
 
