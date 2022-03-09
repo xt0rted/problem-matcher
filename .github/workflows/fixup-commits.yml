@@ -1,11 +1,9 @@
-name: Pull Request
+name: Block on fixup commits
 
-on: pull_request
+on: pull_request_target
 
 jobs:
-  message-check:
-    name: Block autosquash commits
-
+  check:
     runs-on: ubuntu-latest
 
     permissions:
