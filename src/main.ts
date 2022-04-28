@@ -4,7 +4,7 @@ import { join } from "path";
 import { getInput, setFailed } from "@actions/core";
 import { issueCommand } from "@actions/core/lib/command"
 
-import { ProblemMatcherDocument } from "github-actions-problem-matcher-typings";
+import type { ProblemMatcherDocument } from "github-actions-problem-matcher-typings";
 
 const { readFile } = promises;
 
