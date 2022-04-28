@@ -30,16 +30,12 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
-      - run: yarn install
+      - run: npm ci
 
-      - run: yarn lint
+      - run: npm run lint
 
-      - run: yarn build
+      - run: npm run build
 
-      - run: yarn test
+      - run: npm test
 
-      - run: yarn package
-        if: ${{ matrix.node != 17 }}
-
-      - run: export NODE_OPTIONS=--openssl-legacy-provider && yarn package
-        if: ${{ matrix.node == 17 }}
+      - run: npm run package
