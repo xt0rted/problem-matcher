@@ -7,7 +7,7 @@ A GitHub Actions template to easily add or remove a problem matcher to workflows
 
 ## Setup
 
-This template has been designed so the only code change you should have to make is in [problem-matcher.json](.github/problem-matcher.json) and optionally the tests for it.
+This template has been designed so the only code change you should have to make is in [problem-matcher.json](/src/problem-matcher.json) and optionally the tests for it.
 When editing the `problem-matcher.json` you should set the owner name to the application and/or report style being matched.
 Examples of this are `eslint`, `eslint-compact`, or `eslint-stylish`.
 
