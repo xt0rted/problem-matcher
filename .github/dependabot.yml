@@ -6,8 +6,6 @@ updates:
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 99
-    commit-message:
-      prefix: ""
 
   - package-ecosystem: "npm"
     directory: "/"
@@ -15,5 +13,3 @@ updates:
       interval: "weekly"
     open-pull-requests-limit: 99
     versioning-strategy: "increase"
-    commit-message:
-      prefix: ""
