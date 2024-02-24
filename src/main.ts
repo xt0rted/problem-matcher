@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
 import { getInput, setFailed } from "@actions/core";
-import { issueCommand } from "@actions/core/lib/command"
+import { issueCommand } from "@actions/core/lib/command.js"
 
 import type { ProblemMatcherDocument } from "github-actions-problem-matcher-typings";
 
