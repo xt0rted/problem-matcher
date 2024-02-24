@@ -1,12 +1,10 @@
-import { promises } from "fs";
-import { join } from "path";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 
 import { getInput, setFailed } from "@actions/core";
 import { issueCommand } from "@actions/core/lib/command"
 
 import type { ProblemMatcherDocument } from "github-actions-problem-matcher-typings";
-
-const { readFile } = promises;
 
 export async function run(): Promise<void> {
   try {
